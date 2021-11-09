@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mochiy+Pop+P+One&display=swap');
+
+html, body {
+  height: 100%;
+  color: #B87C4C;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='519' height='62.3' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='11.4' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+body {
+  margin: 0;
+  overflow: hidden; 
+  font-family: 'Lato', sans-serif;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header h1 {
+  margin: 0 0 50px 0;
+font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.header select {
+  font-size: 1rem;
+}
+
+.slideshow {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+
+  border: 5px solid #B87C4C;
+  
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transform: scale(1);
+  transition: all .9s ease-out;
+  
+}
+
+.slide:nth-last-child(2) {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.modal-content{
+  background-color: black;
+}
+.modal-content button{
+  background-color: #2F4858;
+  border: 0;
+  margin-bottom: 1rem;
+}
+.modal-content button:hover{
+  background-color: #283b47;
+  border: 0;
+}
+
+
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+  30%{
+    transform: scale(1,0.8) translate(0px, 10px); 
+  }
+  75%{
+    transform: scale(1,1.1) translate(0px, -25px); 
+  }
+  100% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+}
+
+.bounce {
+  text-align:center;
+  margin:0 auto;
+  height:20px;
+  width:100%;
+  padding:20px;  
+ -webkit-animation: bounce 0.75s infinite;
+ margin-bottom: 1rem;
+}
+
+span{
+  font-size: 1.8rem;
+}
+
+.bounce button{
+  background: #2F4858;
+  border-radius: 8px;
+  color: white;
+  border: 0;
+  
+}
+select{
+  width: 100%;
+  font-weight: 600;
+}
+option{
+  font-weight: 600;
+}
